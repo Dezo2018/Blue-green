@@ -14,7 +14,7 @@ pipeline{
                     ls -lah
                 '''
                 withAWS(credentials: "aws-static", region:'us-east-1') {
-                    s3Upload(file:'index.html', bucket:'des1jenkins', path:'/Users/macuser/Documents/src/jenkins1/nd9991-c3-Build-CI-CD-Pipelines-Monitoring-and-Logging-v1/jenkinsfile')
+                    s3Upload(file:'index.html', bucket:'des1jenkins', path:'/Users/macuser/Documents/src/jenkins1/nd9991-c3-Build-CI-CD-Pipelines-Monitoring-and-Logging-v1/Blue-green/index.html')
                 }
             }
         }
